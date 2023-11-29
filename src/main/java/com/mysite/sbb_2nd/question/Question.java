@@ -1,15 +1,17 @@
-package com.mysite.sbb_2nd;
+package com.mysite.sbb_2nd.question;
 
+import com.mysite.sbb_2nd.answer.Answer;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
-@Setter
+@Builder
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
